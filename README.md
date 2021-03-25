@@ -1,3 +1,8 @@
+NOTE: I followed the youtube video https://www.youtube.com/watch?v=L72fhGm1tfE
+and used this website https://medium.com/@nnamani.ezinne/simple-note-taking-app-using-node-js-and-ejs-4899321a3342
+
+These were the sources I followed to help me get this set up.
+
 # 11 Express.js: Note Taker
 
 ## Your Task
