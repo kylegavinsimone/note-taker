@@ -6,6 +6,8 @@ let noteList;
 
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 8888;
+app.listen(PORT, () => console.log('Server started on port ${PORT}'));
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
