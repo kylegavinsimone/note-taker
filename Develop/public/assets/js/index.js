@@ -5,7 +5,7 @@ let newNoteBtn;
 let noteList;
 
 const express = require("express");
-const path= require('path');
+const path = require("path");
 const app = express();
 app.get("/", (req, res) => {});
 const PORT = process.env.PORT || 8888;
