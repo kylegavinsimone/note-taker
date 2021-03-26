@@ -4,12 +4,19 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
+// Dependencies
+
 const express = require("express");
 const path = require("path");
+
+// Sets up the Express App
+
 const app = express();
-app.get("/", (req, res) => {});
-const PORT = process.env.PORT || 8888;
-app.listen(PORT, () => console.log("Server started on port ${PORT}"));
+const PORT = 3000;
+
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 if (window.location.pathname === "/notes") {
   noteTitle = document.querySelector(".note-title");
