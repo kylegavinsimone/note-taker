@@ -18,6 +18,10 @@ const PORT = process.env.PORT || 8888;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+if (typeof window === "undefined") {
+  global.window = {};
+}
+
 if (window.location.pathname === "/notes") {
   noteTitle = document.querySelector(".note-title");
   noteText = document.querySelector(".note-textarea");
