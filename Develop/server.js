@@ -5,7 +5,7 @@ const fs = require("fs");
 const PORT = process.env.PORT || 8888;
 let notes;
 (async function getNotes() {
-  const data = await fs.promises.readFile("./db/db.json", "utf8");
+  const data = await fs.promises.readFile("./DB/db.json", "utf8");
   notes = JSON.parse(data);
 })();
 app.use(express.urlencoded({ extended: true }));
